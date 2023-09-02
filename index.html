@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript foundation</title>
+</head>
+<style>
+    .cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: lightseagreen;
+        }
+
+        button{
+            padding: 18px;
+            border-radius: 13px;
+            font-size: 21px;
+        }
+        </style>
+        <body>
+    <div class="cont">
+        <h1 id="mainheading">The most affordable learning platform</h1>
+      
+        <button onclick="toggleHeading()">CLICK HERE</button>
+    </div>
+</body>
+<script>
+function toggleHeading(){
+    var heading = document.getElementById("mainheading");
+    if(heading.innerHTML === "The most affordable learning platform"){
+        heading.innerHTML= "PW SKILLS";
+    }else{
+        heading.innerHTML === "The most affordable learning platform";
+    }
+}
+</script>
+</html>
